@@ -6,11 +6,12 @@ This is a basic to-do list web application built with React for the front-end an
 
 ## Installation
 
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the front-end repository: `git clone https://github.com/AariF-ShazZ/SR-Edu--Technologies-Client.git`
 2. Navigate to the front-end directory: `cd SR-Edu--Technologies-Client/myfirst`
 3. Install dependencies: `npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion axios redux react-redux redux-thunk react-icons`
-4. Navigate to the back-end directory: `cd ../SR-Edu--Technologies-Server`
-5. Install back-end dependencies: `npm install cors dotenv express mongoose nodemon`
+4. Clone the back-end repository: `git clone https://github.com/AariF-ShazZ/SR-Edu--Technologies-Server.git`
+5. Navigate to the back-end directory: `cd ../SR-Edu--Technologies-Server`
+6. Install back-end dependencies: `npm install cors dotenv express mongoose nodemon`
 
 ## Usage
 
