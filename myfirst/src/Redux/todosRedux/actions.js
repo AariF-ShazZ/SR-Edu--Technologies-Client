@@ -19,10 +19,9 @@ const getTasksSuccess = (payload) => {
     }
 }
 
-export const getTasks = (payload) => (dispatch) => {
-    console.log("payload",payload);
+export const getTasks = () => (dispatch) => {
     dispatch(getTasksRequest())
-  return axios.get(`http://localhost:8000/task/api/tasks`)
+  return axios.get(`https://long-pear-caterpillar-hose.cyclic.app/task/api/tasks`)
         .then((res) => {
             console.log(res.data.data)
             dispatch(getTasksSuccess(res.data.data))
@@ -52,7 +51,7 @@ const postTaskSuccess = (payload) => {
 export const postTask = (payload) => (dispatch) => {
     console.log("payload",payload);
     dispatch(postTaskRequest())
-  return axios.post(`http://localhost:8000/task/api/tasks`,payload)
+  return axios.post(`https://long-pear-caterpillar-hose.cyclic.app/task/api/tasks`,payload)
         .then((res) => {
             console.log(res.data.data)
             dispatch(postTaskSuccess(res.data.data))
@@ -81,7 +80,7 @@ const updateTaskSuccess = (payload) => {
 
 export const updateTask = (id) => (dispatch) => {
     dispatch(updateTaskRequest())
-  return axios.put(`http://localhost:8000/task/api/tasks/${id}`,)
+  return axios.put(`https://long-pear-caterpillar-hose.cyclic.app/task/api/tasks/${id}`,)
         .then((res) => {
             console.log(res.data.data)
             dispatch(updateTaskSuccess(res.data.data))
